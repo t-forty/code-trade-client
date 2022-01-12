@@ -4,6 +4,7 @@
 import Signup from './components/auth/sign-up';
 import Home from './components/home/home';
 import Login from './components/auth/login';
+import Jobs from './components/jobs/jobs';
 import Protected from './components/protected/protected';
 
 import './App.css';
@@ -20,8 +21,17 @@ function App() {
 
       <Routes>
         <Route path='/' element={ <Home /> }></Route>
+        {/* 
+        <coding>, bootcamps: <bootcamps>, list, profile; schools: list, profile; jobs(db list); influencers: list, details; 
+        <trades>, tradeList, tradeDetails; jobs(api list); programs;  
+        jobDetails ,  
+        programDetails,
+        blog: ,
+        contact: /contact, form
+        */}
         <Route path='/register' element={ <Signup /> }></Route>
         <Route path='/login' element={ <Login /> }></Route>
+        <Route path='/jobs' element={ <Jobs /> }></Route>
         {/* Protected renders correct element if authenticated, or undefined
           if route not found: 
             ex: /fasdfdsf renders Undefined 

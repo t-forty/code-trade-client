@@ -1,7 +1,7 @@
 import React from 'react';
 import auth from '../../auth/auth';
 import Login from '../auth/login';
-import Profile from '../profile/profile';
+import Profile from '../user/profile';
 import Company from '../company/company';
 import Program from '../program/program';
 import Undefined from '../undefined/undefined';
@@ -27,6 +27,7 @@ export default function Protected(props) {
         }
     }else{
         // read param for route and view component
+        // add routes: user-form, company-form, influencer-form, job-form, school-form, bootcamp-form, program-form 
         switch(location.pathname){
             case "/profile":
                 return(
